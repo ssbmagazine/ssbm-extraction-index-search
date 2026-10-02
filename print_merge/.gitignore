@@ -1,0 +1,7 @@
+content/
+output/
+templates/
+__pycache__/
+*.pdf
+*.png
+*.pyc

@@ -1,0 +1,31 @@
+# Runtime / generated
+__pycache__/
+*.pyc
+*.pyo
+.ssbm_archive.db.bak
+ssbm_archive.db
+archive/
+extracted_jsons/
+extracted_txts/
+*.png
+
+# Source PDFs and other binaries (keep out of git)
+*.pdf
+*.PDF
+
+# IDE / local OCR data
+.idea/
+tessdata/*.traineddata
+tessdata/*.traineddata.gz
+
+# Golden run artifacts (keep tests)
+golden/last_run.json
+
+# print_merge I/O (scripts + README only)
+print_merge/content/
+print_merge/output/
+print_merge/templates/
+print_merge/__pycache__/
+
+# Nested repos / vendored tools (track separately if needed)
+telugu-encoder/

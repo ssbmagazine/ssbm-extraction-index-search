@@ -269,8 +269,9 @@ class AnuToUnicodeDecoder:
         final_output = re.sub(r"([క-హౘ-ౚ])([ా-ౄె-ౌౕౖ])్([క-హౘ-ౚ])", r"\1్\3\2", final_output)
         
         final_output = final_output.replace("Ð", "-")
-        return final_output
+        from telugu_normalize import normalize_telugu_text
 
+        return normalize_telugu_text(final_output)
 if __name__ == "__main__":
     d = AnuToUnicodeDecoder()
     sample = "„¿Ñ=∞"
